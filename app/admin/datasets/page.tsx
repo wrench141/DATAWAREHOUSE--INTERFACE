@@ -134,8 +134,8 @@ export default function Datasets() {
                                                             <ion-icon name="document-text-outline"></ion-icon>
                                                         </div>
                                                         <p className="name">{uploadedFiles[0].name}</p>
-                                                        <p className="meta">File Size: {Math.ceil(((parseInt(uploadedFiles[0].size) / 1024) / 1024))}MB</p>
-                                                        <p className="meta">File Type: {uploadedFiles[0].type}</p>
+                                                        <p className="meta">Size: {Math.ceil(((parseInt(uploadedFiles[0].size) / 1024) / 1024))}MB</p>
+                                                        <p className="meta">Type: {uploadedFiles[0].type}</p>
                                                         <div className="btn-wrap">
                                                             <button className="btn">
                                                                 Reselect File
