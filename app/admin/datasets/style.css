@@ -260,6 +260,82 @@
   height: -moz-max-content;
   height: max-content;
 }
+.container .canvas .upload-canvas .meta-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.container .canvas .upload-canvas .meta-wrap .icon-wrap {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+.container .canvas .upload-canvas .meta-wrap .icon-wrap ion-icon {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.container .canvas .upload-canvas .meta-wrap .name {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+.container .canvas .upload-canvas .meta-wrap .meta {
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+.container .canvas .upload-canvas .meta-wrap .progress {
+  width: 50%;
+  height: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  background: rgba(230, 230, 230, 0.1490196078);
+  border: 1px solid #cfcfcf;
+}
+.container .canvas .upload-canvas .meta-wrap .progress .bar {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(to right, #1c1c1c, #000000);
+  border-radius: 20px;
+  animation: load 2s ease forwards;
+}
+.container .canvas .upload-canvas .meta-wrap .btn-wrap {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+.container .canvas .upload-canvas .meta-wrap .btn-wrap .btn {
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border: 1px solid #cfcfcf;
+  background: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.container .canvas .upload-canvas .meta-wrap .btn-wrap .btn ion-icon {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.container .canvas .upload-canvas .meta-wrap .btn-wrap .sel {
+  border-color: black;
+  background-color: black;
+  color: white;
+}
 .container .canvas .dataset-canvas {
   width: 100%;
   height: -moz-max-content;
@@ -268,4 +344,13 @@
   display: grid;
   gap: 15px;
   grid-template-columns: repeat(4, 1fr);
+}
+
+@keyframes load {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

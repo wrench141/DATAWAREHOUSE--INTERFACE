@@ -4,6 +4,12 @@
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 10px;
     user-select: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.card:hover{
+    box-shadow: 0 0 15px #00000016;
 }
 
 
