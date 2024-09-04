@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100%;
+  height: max-content;
+  background: #fff;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.container .title{
+  font-size: 22px;
+  text-align: center;
+}
+
+.container .sub{
+  font-size: 13px;
+  color: rgb(26, 26, 26);
+  text-align: center;
+}
+
+.container .in-wrap{
+  width: 100%;
+  height: max-content;
+  background: linear-gradient(to right, #efefef, #f9f9f9, #f9f9f9, #efefef);
+  padding: 40px 60px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .in-wrap .wrap{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.container .in-wrap .row-wrap{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.container .in-wrap .row-wrap .search, .btn{
+  width: 40%;
+  height: 45px;
+  font-size: 15px;
+  border: none;
+  padding: 0 10px;
+  color: black;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.059);
+  border-radius: 10px;
+  font-family: "Public Sans";
+  outline: none;
+}
+
+.container .in-wrap .row-wrap .btn{
+  width: 45px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.container .sections{
+  width: 80%;
+  height: 100vh;
+}
+
+.cards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  font-family: "Public Sans";
+}
+
+.cards .cards-wrap {
+  margin-top: 20px;
+  width: 100%;
+  height: max-content;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}

@@ -1,0 +1,271 @@
+.wrap-row {
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  gap: 15px;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 18% 1fr;
+}
+.container .canvas {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: max-content max-content max-content 1fr;
+}
+.container .canvas .search-wrap {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #cfcfcf;
+  padding: 20px;
+}
+.container .canvas .search-wrap .search, .container .canvas .search-wrap .btn {
+  width: 35%;
+  border: 1px solid #cfcfcf;
+  height: 35px;
+  padding: 0 10px;
+  font-size: 13px;
+  border-radius: 5px;
+  background: rgba(230, 230, 230, 0.1490196078);
+  outline: none;
+}
+.container .canvas .search-wrap .btn {
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .canvas .title-wrap {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  border-bottom: 1px solid #cfcfcf;
+  padding: 20px;
+  display: flex;
+  background: rgba(230, 230, 230, 0.1490196078);
+  align-items: center;
+  justify-content: space-between;
+}
+.container .canvas .title-wrap .wrap-row {
+  height: 50px;
+}
+.container .canvas .title-wrap .wrap-row .logo {
+  width: 50px;
+  border: 1px solid #cfcfcf;
+  height: 50px;
+  border-radius: 5px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .canvas .title-wrap .wrap-row .wrap-col {
+  width: -moz-max-content;
+  width: max-content;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container .canvas .title-wrap .wrap-row .wrap-col .title {
+  font-weight: 600;
+  font-size: 17px;
+}
+.container .canvas .title-wrap .wrap-row .wrap-col .sub {
+  font-size: 13px;
+}
+.container .canvas .title-wrap .btn-wrap {
+  width: -moz-max-content;
+  width: max-content;
+  height: 30px;
+  display: flex;
+  gap: 10px;
+}
+.container .canvas .title-wrap .btn-wrap .btn {
+  width: -moz-max-content;
+  width: max-content;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+  height: -moz-max-content;
+  height: max-content;
+  cursor: pointer;
+  padding: 0 15px;
+  height: inherit;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  background: white;
+}
+.container .canvas .title-wrap .btn-wrap .filled {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+.container .canvas .submenu {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 10px 20px;
+  padding-bottom: 0;
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #cfcfcf;
+}
+.container .canvas .submenu .option {
+  width: -moz-max-content;
+  width: max-content;
+  height: 30px;
+  font-size: 13px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.container .canvas .submenu .sel {
+  border-bottom: 2px solid black;
+}
+.container .canvas .upload-canvas {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 0.25fr;
+  gap: 20px;
+}
+.container .canvas .upload-canvas .upload {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px dashed #cfcfcf;
+  display: flex;
+  flex-direction: column;
+  background: rgba(230, 230, 230, 0.1490196078);
+  justify-content: center;
+  align-items: center;
+}
+.container .canvas .upload-canvas .upload ion-icon {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.container .canvas .upload-canvas .upload .utxt {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.container .canvas .upload-canvas .upload .sutxt {
+  color: grey;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.container .canvas .upload-canvas .upload .wrap-row {
+  gap: 10px;
+}
+.container .canvas .upload-canvas .upload .wrap-row .btn {
+  height: 30px;
+  padding: 0 10px;
+  background-color: white;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+  font-size: 12px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.container .canvas .upload-canvas .upload .wrap-row .btn ion-icon {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.container .canvas .upload-canvas .steps {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+.container .canvas .upload-canvas .steps .step-wrap {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 10px;
+}
+.container .canvas .upload-canvas .steps .step-wrap .icons {
+  width: 30px;
+  height: 100%;
+  display: grid;
+  gap: 2px;
+  grid-template-rows: 30px 1fr;
+  align-content: center;
+}
+.container .canvas .upload-canvas .steps .step-wrap .icons .circle {
+  width: 100%;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #cfcfcf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  color: rgb(117, 117, 117);
+  font-size: 15px;
+}
+.container .canvas .upload-canvas .steps .step-wrap .icons .sel {
+  color: white;
+  background-color: #00b07e;
+  border-color: #00b07e;
+}
+.container .canvas .upload-canvas .steps .step-wrap .icons .line-wrap {
+  width: 30px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container .canvas .upload-canvas .steps .step-wrap .icons .line-wrap .ver-line {
+  width: 2px;
+  height: 100%;
+  background-color: #00dd9e;
+}
+.container .canvas .upload-canvas .steps .step-wrap .script {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  padding-top: 3px;
+}
+.container .canvas .upload-canvas .steps .step-wrap .script .tag-label {
+  font-size: 14px;
+  font-weight: 500;
+}
+.container .canvas .upload-canvas .steps .step-wrap .script .tag-sublabel {
+  word-wrap: break-word;
+  font-size: 12px;
+  color: #aeaeae;
+  padding-bottom: 20px;
+  margin-top: 5px;
+}
+.container .canvas .upload-canvas .uploaded-wizard {
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.container .canvas .dataset-canvas {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 20px;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+}/*# sourceMappingURL=style.css.map */
